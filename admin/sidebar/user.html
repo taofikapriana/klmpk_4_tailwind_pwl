@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-700">
+  <header class="bg-gradient-to-r from-purple-500 to-blue-500 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Admin Page</Param></h1>
+      <a href="../../login/login.html" class="text-sm hover:underline">Logout</a>
+    </div>
+  </header>
+
+  <div class="flex h-screen">
+    <aside class="bg-gray-900 text-white w-64 p-6 space-y-4">
+      <nav>
+        <ul>
+          <li><a href="dashboard.html" class="block py-2 px-4 rounded hover:bg-gray-700">Dashboard</a></li>
+          <li><a class="block py-2 px-4 rounded hover:bg-gray-700">Pengguna</a></li>
+          <li><a href="produk.html" class="block py-2 px-4 rounded hover:bg-gray-700">Produk</a></li>
+          <li><a href="../../beranda/beranda.html" class="block py-2 px-4 rounded hover:bg-gray-700">Beranda</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="flex-1 p-10">
+      <h2 class="text-3xl font-bold mb-6">User Anggota</h2>
+      <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+        <table class="min-w-full bg-white">
+          <thead>
+            <tr class="bg-gradient-to-r from-purple-500 to-blue-500 text-white uppercase text-sm leading-normal">
+              <th class="py-3 px-6 text-left">Nama</th>
+              <th class="py-3 px-6 text-left">Email</th>
+              <th class="py-3 px-6 text-center">Aksi</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-600 text-sm font-light">
+            <tr class="border-b border-gray-200 hover:bg-gray-100">
+              <td class="py-3 px-6 text-left"><span class="font-medium">Taofik</span></td>
+              <td class="py-3 px-6 text-left">taofik@gmail.com</td>
+              <td class="py-3 px-6 text-center">
+                <button class="bg-sky-400 text-white py-1 px-3 rounded hover:bg-sky-500">Edit</button>
+                <button class="bg-red-400 text-white py-1 px-3 rounded hover:bg-red-500">Delete</button>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100">
+              <td class="py-3 px-6 text-left"><span class="font-medium">Andini</span></td>
+              <td class="py-3 px-6 text-left">andini@gmail.com</td>
+              <td class="py-3 px-6 text-center">
+                <button class="bg-sky-400 text-white py-1 px-3 rounded hover:bg-sky-500">Edit</button>
+                <button class="bg-red-400 text-white py-1 px-3 rounded hover:bg-red-500">Delete</button>
+              </td>
+            </tr>
+            <tr class="border-b border-gray-200 hover:bg-gray-100">
+              <td class="py-3 px-6 text-left"><span class="font-medium">Afzal</span></td>
+              <td class="py-3 px-6 text-left">afzal@gmail.com</td>
+              <td class="py-3 px-6 text-center">
+                <button class="bg-sky-400 text-white py-1 px-3 rounded hover:bg-sky-500">Edit</button>
+                <button class="bg-red-400 text-white py-1 px-3 rounded hover:bg-red-500">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+          
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
