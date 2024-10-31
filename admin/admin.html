@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-purple-500 to-blue-500 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-lg sm:text-2xl font-bold">Admin Page</h1>
+      <div>
+        <a href="../../login/login.html" class="text-xs sm:text-sm hover:underline">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="flex h-screen">
+
+    <!-- Sidebar -->
+    <aside class="bg-gray-900 text-white w-64 p-6 space-y-4 hidden sm:block">
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a class="block py-2 px-4 rounded hover:bg-gray-700" href="#">Dashboard</a></li>
+          <li><a href="sidebar/user.html" class="block py-2 px-4 rounded hover:bg-gray-700" aria-label="User Management">Pengguna</a></li>
+          <li><a href="sidebar/produk.html" class="block py-2 px-4 rounded hover:bg-gray-700" aria-label="Product Management">Produk</a></li>
+          <li><a href="../beranda/beranda.html" class="block py-2 px-4 rounded hover:bg-gray-700" aria-label="Homepage">Beranda</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Mobile Sidebar Toggle -->
+    <div class="sm:hidden p-4">
+      <button id="toggleSidebar" class="bg-purple-500 text-white px-4 py-2 rounded-md">Menu</button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <div class="container mx-auto">
+        <h2 class="text-lg sm:text-xl font-bold mb-4">Welcome, Admin!</h2>
+
+        <!-- Statistics Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-green-300 p-6 rounded-lg shadow-lg">
+            <h3 class="text-md sm:text-lg font-semibold mb-2">Total Users</h3>
+            <p class="text-xl sm:text-2xl font-bold">3</p>
+          </div>
+          <div class="bg-blue-300 p-6 rounded-lg shadow-lg">
+            <h3 class="text-md sm:text-lg font-semibold mb-2">Sesi Aktif</h3>
+            <p class="text-xl sm:text-2xl font-bold">20</p>
+          </div>
+          <div class="bg-purple-300 p-6 rounded-lg shadow-lg">
+            <h3 class="text-md sm:text-lg font-semibold mb-2">Total Products</h3>
+            <p class="text-xl sm:text-2xl font-bold">5</p>
+          </div>
+        </div>
+
+        <!-- Recent Activities Section -->
+        <div class="mt-8">
+          <h3 class="text-md sm:text-lg font-semibold mb-4">Recent Activities</h3>
+          <ul class="bg-gradient-to-r from-purple-500 to-blue-500 text-white p-4 rounded-lg shadow-lg space-y-2 text-sm sm:text-base">
+            <li>Pengguna Afzal memperbarui profil.</li>
+            <li>Pengguna Taofik memperbarui profil.</li>
+            <li>Pengguna Andini memperbarui profil.</li>
+            <li>Admin menambahkan produk baru ke sistem.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Toggle sidebar visibility on mobile
+    document.getElementById('toggleSidebar').addEventListener('click', function() {
+      const sidebar = document.querySelector('aside');
+      sidebar.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
