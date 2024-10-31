@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-700">
+  <header class="bg-gradient-to-r from-purple-500 to-blue-500 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Admin Page</h1>
+      <a href="../../login/login.html" class="text-sm hover:underline">Logout</a>
+    </div>
+  </header>
+
+  <div class="flex ">
+    <aside class="bg-gray-900 text-white w-64 p-6 space-y-4">
+        <nav>
+          <ul>
+            <li><a href="dashboard.html" class="block py-2 px-4 rounded hover:bg-gray-700">Dashboard</a></li>
+            <li><a href="user.html" class="block py-2 px-4 rounded hover:bg-gray-700">Pengguna</a></li>
+            <li><a class="block py-2 px-4 rounded hover:bg-gray-700">Produk</a></li>
+            <li><a href="../../beranda/beranda.html" class="block py-2 px-4 rounded hover:bg-gray-700">Beranda</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    <main class="flex-1 p-10">
+      <h2 class="text-3xl font-bold mb-6">Daftar Produk</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-semibold mb-2">Kamera</h3>
+          <img src="../../image/kamera.png" alt="Gambar Produk 1" class="w-full h-40 object-cover mb-2 rounded-lg">
+          <p class="text-gray-600">Rp 1.600.000</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-semibold mb-2">Headphones</h3>
+          <img src="../../image/Headphones.jpeg" alt="Gambar Produk 2" class="w-full h-40 object-cover mb-2 rounded-lg">
+          <p class="text-gray-600">Rp 250.000</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-semibold mb-2">Laptop</h3>
+          <img src="../../image/laptop.jpeg" alt="Gambar Produk 3" class="w-full h-40 object-cover mb-2 rounded-lg">
+          <p class="text-gray-600">Rp 6.000.000</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-semibold mb-2">Iphone</h3>
+          <img src="../../image/ip.webp" alt="Gambar Produk 4" class="w-full h-40 object-cover mb-2 rounded-lg">
+          <p class="text-gray-600">Rp 12.250.000</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="text-lg font-semibold mb-2">Vape</h3>
+          <img src="../../image/Vape.png" alt="Gambar Produk 5" class="w-full h-40 object-cover mb-2 rounded-lg">
+          <p class="text-gray-600">Rp 100.000</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
